@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    color: #1d1d1f;
+    background-color: #fff;
+    line-height: 1.47059;
+    letter-spacing: -0.022em;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 22px;
+    width: 100%;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 55px 0 40px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    color: #1d1d1f;
+}
+
+.cta-links {
+    margin-top: 18px;
+}
+
+.cta-links a {
+    font-size: 21px;
+    color: #06c;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.cta-links a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #d2d2d7;
+    margin: 35px 0;
+}
+
+/* Product Showcase Section */
+.product-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.product-item {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #6e6e73;
+}
+
+.product-text {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    min-height: 60px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* Recall section */
+.recall {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.recall a {
+    font-size: 16px;
+    color: #06c;
+    text-decoration: none;
+}
+
+.recall a:hover {
+    text-decoration: underline;
+}
+
+/* Footer navigation */
+.footer-nav {
+    border-top: 1px solid #d2d2d7;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #1d1d1f;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    font-size: 12px;
+    color: #6e6e73;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    color: #1d1d1f;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    border-top: 1px solid #d2d2d7;
+    padding: 20px 0;
+    font-size: 12px;
+    color: #6e6e73;
+}
+
+.shopping-info {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.legal a {
+    color: #6e6e73;
+    text-decoration: none;
+    margin-right: 20px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #6e6e73;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-showcase {
+        justify-content: center;
+    }
+    
+    .product-item {
+        min-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+    
+    .hero h2 {
+        font-size: 22px;
+    }
+    
+    .product-item {
+        min-width: 100%;
+    }
+    
+    .footer-column {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero h2 {
+        font-size: 18px;
+    }
+    
+    .cta-links a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .footer-column {
+        min-width: 100%;
+    }
+    
+    .legal a {
+        margin-right: 10px;
+    }
+}
